@@ -1,0 +1,64 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body{	
+	
+	margin: 10%;
+	padding: 0;	
+	overflow-x: hidden;
+	background-color: #212121;
+	}
+
+html{
+	scroll-behavior: smooth;
+}
+
+h1{
+	font-family: acumin-pro, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	color: #F7F7F7;
+}
+
+/*startpage*/
+
+.startpage{
+	text-align: center;
+}
+
+.startpage img{
+	width: 90%;
+	margin-top: 25%;
+}
+
+.arrow-down {
+  box-sizing: border-box;
+  height: 10vw;
+  width: 10vw;
+  border-style: solid;
+  border-color: white;
+  border-width: 0px 1px 1px 0px;
+  transform: rotate(45deg);
+  transition: border-width 150ms ease-in-out;
+}
+
+.arrow-down:hover {
+  border-bottom-width: 4px;
+  border-right-width: 4px;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15vw;;
+}
+
+/*projekte*/
+
+.projekte{
+	margin-top: 100%;	
+}
+
