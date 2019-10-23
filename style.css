@@ -23,6 +23,22 @@ h1{
 	margin-bottom: 5vw;
 }
 
+p{
+	font-family: acumin-pro, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #f7f7f7;
+}
+
+a{
+	font-family: acumin-pro, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #f7f7f7;
+	text-decoration: none;
+}
+
+
 /*startpage*/
 
 .startpage{
@@ -51,10 +67,10 @@ h1{
 }
 
 .arrow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 15vw;;
+  	display: flex;
+  	align-items: center;
+ 	justify-content: center;
+  	height: 15vw;;
 }
 
 /*projekte*/
@@ -71,7 +87,11 @@ h1{
 	font-family: acumin-pro, sans-serif;
 	font-weight: 400;
 	font-style: normal;
-	display: inline-block;
+	color: #f7f7f7;
+	position: absolute;
+ 	top: 50%;
+ 	left: 50%;
+  	transform: translate(-50%, -50%);
 }
 
 
