@@ -14,14 +14,7 @@ body{
 	}
 
 html{
-	scroll-behavior: smooth;
 	overflow-x:hidden;
-	-webkit-overflow-scroll: touch;
-}
-
-#scroll-wrapper {
-    -webkit-overflow-scrolling: touch;
-    overflow-y: scroll;
 }
 
 h1{
@@ -68,9 +61,6 @@ input[type=text],[type=number], [type=email], [type=submit]{
 	-webkit-appearance: none;
 }
 
-input[type=checkbox]{
-	float: left;
-}
 
 textarea{
 	width: 100%;
@@ -167,3 +157,9 @@ textarea{
 	border: 0;
 	z-index: 2;
 }
+
+@media (min-width:1920px){
+	input[type=submit]:hover{
+	background-color: #808080;
+	color: #f7f7f7;
+}}
