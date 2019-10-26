@@ -1,6 +1,6 @@
 <?php
 //send_email.php
-$email_from = "absender@domain.de";   //Absender falls keiner angegeben wurde
+$email_from = "absender@ocular.ch";   //Absender falls keiner angegeben wurde
 $sendermail_antwort = true;      //E-Mail Adresse des Besuchers als Absender. false= Nein ; true = Ja
 $name_von_emailfeld = "Email";   //Feld in der die Absenderadresse steht
  

@@ -9,12 +9,19 @@ body{
 	margin: 10%;
 	padding: 0;	
 	overflow-x: hidden;
+	-webkit-overflow-scroll: touch;
 	background-color: #212121;
 	}
 
 html{
 	scroll-behavior: smooth;
 	overflow-x:hidden;
+	-webkit-overflow-scroll: touch;
+}
+
+#scroll-wrapper {
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
 }
 
 h1{
@@ -47,24 +54,22 @@ article{
 }
 
 input{
-	width: 100%;
 	height: 3em;
 	background-color: #f7f7f7;
 	border-radius: 0;
 	border: none;
+	text-decoration: none;
+	color: #212121;
 	
 }
 
-input[type=submit]{
-	background-color: #f7f7f7;
-	color: #212121;
-	border-radius: 0;
-	border: none;
+input[type=text],[type=number], [type=email], [type=submit]{
+	width: 100%;
+	-webkit-appearance: none;
 }
 
-input[type=submit]:hover{
-	background-color: #212121;
-	color: #f7f7f7;
+input[type=checkbox]{
+	float: left;
 }
 
 textarea{
@@ -73,9 +78,21 @@ textarea{
 	border: none;
 }
 
+.accept-text{
+	color: #808080;
+	font-family: acumin-pro, sans-serif;
+	font-weight: 200;
+	font-style:italic;
+	font-size: 14px;
+	float: left;
+	padding-top: 0.5em;
+	padding-left: 0.5em;
+}
+
 /*alg. titel*/
 .titel{
 	margin-bottom: 5vw;
+	padding-top: 2em;
 }
 
 .titel hr{
