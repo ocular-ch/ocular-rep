@@ -29,9 +29,9 @@ h2{
 	font-family: acumin-pro, sans-serif;
 	font-weight: 100;
 	font-style: normal;
-	font-size: 18px;
+	font-size: 16px;
 	text-align: center;
-	color: #F7F7F7;
+	color: #212121;
 	letter-spacing: 1.5px;
 }
 
@@ -162,25 +162,26 @@ textarea{
 /*über uns*/
 
 .team{
+	margin-top: 2em;
+	padding: 1em;
 	text-align: center;
+	background-color: #F7F7F7;
 }
 
 .teammember1, .teammember2, .teammember3{
 	width: 20%;
-	text-align: center;
-	position: relative;
 	display: inline-block;
+	position:static;
 }
 
 .teammember1{
-	padding-right:6%;
+	float: left;
 }
 .teammember2{
-	padding-left: 6%;
-	padding-right:6%;
+
 }
 .teammember3{
-	padding-left: 6%;
+	float: right;
 }
 
 .tm-img img{
