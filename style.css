@@ -31,7 +31,7 @@ h2{
 	font-style: normal;
 	font-size: 16px;
 	text-align: center;
-	color: #212121;
+	color: #f7f7f7;
 	letter-spacing: 1.5px;
 }
 
@@ -162,10 +162,13 @@ textarea{
 /*über uns*/
 
 .team{
-	margin-top: 2em;
+	margin-top: 1em;
 	padding: 1em;
 	text-align: center;
-	background-color: #F7F7F7;
+}
+
+.team h1{
+	padding-bottom: 1em;
 }
 
 .teammember1, .teammember2, .teammember3{
