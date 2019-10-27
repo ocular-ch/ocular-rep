@@ -21,13 +21,25 @@ h1{
 	font-family: acumin-pro, sans-serif;
 	font-weight: 100;
 	font-style: normal;
+	font-size: 24px;
 	color: #F7F7F7;
+}
+
+h2{
+	font-family: acumin-pro, sans-serif;
+	font-weight: 100;
+	font-style: normal;
+	font-size: 18px;
+	text-align: center;
+	color: #F7F7F7;
+	letter-spacing: 1.5px;
 }
 
 p{
 	font-family: acumin-pro, sans-serif;
 	font-weight: 400;
 	font-style: normal;
+	font-size: 16px;
 	color: #f7f7f7;
 	padding-bottom: 0.5em;
 	margin: 0;
@@ -68,17 +80,6 @@ textarea{
 	border: none;
 }
 
-.accept-text{
-	color: #808080;
-	font-family: acumin-pro, sans-serif;
-	font-weight: 200;
-	font-style:italic;
-	font-size: 14px;
-	float: left;
-	padding-top: 0.5em;
-	padding-left: 0.5em;
-}
-
 /*alg. titel*/
 .titel{
 	margin-bottom: 5vw;
@@ -86,11 +87,11 @@ textarea{
 }
 
 .titel hr{
-	width: 1em;
+	width: 1.5em;
 	background-color: #f7f7f7;
 }
 
-/*startpage*/
+/*STARTPAGE*/
 
 .startpage{
 	text-align: center;
@@ -156,6 +157,35 @@ textarea{
 	background-color: #f7f7f7;
 	border: 0;
 	z-index: 2;
+}
+
+/*über uns*/
+
+.team{
+	text-align: center;
+}
+
+.teammember1, .teammember2, .teammember3{
+	width: 20%;
+	text-align: center;
+	position: relative;
+	display: inline-block;
+}
+
+.teammember1{
+	padding-right:6%;
+}
+.teammember2{
+	padding-left: 6%;
+	padding-right:6%;
+}
+.teammember3{
+	padding-left: 6%;
+}
+
+.tm-img img{
+	border-radius: 50%;
+	width:100%;
 }
 
 @media (min-width:1920px){
