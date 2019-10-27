@@ -161,14 +161,19 @@ textarea{
 
 /*über uns*/
 
+.ueber-uns{
+	text-align: justify;
+}
+
 .team{
-	margin-top: 1em;
+	margin-top: 0.5em;
 	padding: 1em;
 	text-align: center;
 }
 
 .team h1{
 	padding-bottom: 1em;
+	font-size: 20px;
 }
 
 .teammember1, .teammember2, .teammember3{
@@ -190,6 +195,17 @@ textarea{
 .tm-img img{
 	border-radius: 50%;
 	width:100%;
+}
+
+/*footer*/
+.footer{
+	text-align: center;
+	margin-top: 5em;
+}
+
+.footer a, .footer p{
+	color: #808080;
+	font-size: 14px;
 }
 
 @media (min-width:1920px){
