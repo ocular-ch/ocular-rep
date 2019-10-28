@@ -19,15 +19,16 @@ html{
 
 h1{
 	font-family: acumin-pro, sans-serif;
-	font-weight: 100;
+	font-weight: 600;
 	font-style: normal;
 	font-size: 24px;
+	letter-spacing: 1px;
 	color: #F7F7F7;
 }
 
 h2{
 	font-family: acumin-pro, sans-serif;
-	font-weight: 100;
+	font-weight: 400;
 	font-style: normal;
 	font-size: 16px;
 	text-align: center;
@@ -37,7 +38,7 @@ h2{
 
 p{
 	font-family: acumin-pro, sans-serif;
-	font-weight: 400;
+	font-weight: 200;
 	font-style: normal;
 	font-size: 16px;
 	color: #f7f7f7;
@@ -47,37 +48,14 @@ p{
 
 a{
 	font-family: acumin-pro, sans-serif;
-	font-weight: 400;
+	font-weight: 200;
 	font-style: normal;
 	color: #f7f7f7;
 	text-decoration: none;
-	
 }
 
 article{
 	margin-top: 7em;
-}
-
-input{
-	height: 3em;
-	background-color: #f7f7f7;
-	border-radius: 0;
-	border: none;
-	text-decoration: none;
-	color: #212121;
-	
-}
-
-input[type=text],[type=number], [type=email], [type=submit]{
-	width: 100%;
-	-webkit-appearance: none;
-}
-
-
-textarea{
-	width: 100%;
-	border-radius: 0;
-	border: none;
 }
 
 /*alg. titel*/
@@ -89,6 +67,7 @@ textarea{
 .titel hr{
 	width: 1.5em;
 	background-color: #f7f7f7;
+	
 }
 
 /*STARTPAGE*/
@@ -125,7 +104,7 @@ textarea{
   	height: 15vw;;
 }
 
-/*projekte*/
+/*PROJEKTE*/
 
 .projekte{
 	margin-top: 100%;	
@@ -159,7 +138,20 @@ textarea{
 	z-index: 2;
 }
 
-/*über uns*/
+.mehr-button{
+	text-align: center;
+	margin-top: 4em;
+}
+.mehr-button a{
+	background-color: #f7f7f7;
+	color: #212121;
+	font-size: 14px;
+	padding: 2vw;
+	border-radius: 10px;
+}
+
+
+/*ÜBER UNS*/
 
 .ueber-uns{
 	text-align: justify;
@@ -197,7 +189,30 @@ textarea{
 	width:100%;
 }
 
-/*footer*/
+/*KONTAKT*/
+input{
+	height: 3em;
+	background-color: #f7f7f7;
+	border-radius: 0;
+	border: none;
+	text-decoration: none;
+	color: #212121;
+	
+}
+
+input[type=text],[type=number], [type=email], [type=submit]{
+	width: 100%;
+	-webkit-appearance: none;
+}
+
+
+textarea{
+	width: 100%;
+	border-radius: 0;
+	border: none;
+}
+
+/*FOOTER*/
 .footer{
 	text-align: center;
 	margin-top: 5em;

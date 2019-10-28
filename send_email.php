@@ -8,8 +8,15 @@ $empfaenger = "kontakt@ocular.ch"; //Empfänger-Adresse
 $mail_cc = ""; //CC-Adresse, diese E-Mail-Adresse bekommt einer weitere Kopie
 $betreff = "Neue Kontaktanfrage"; //Betreff der Email
  
-$url_ok = "http://www.ocular.ch"; //Zielseite, wenn E-Mail erfolgreich versendet wurde
+$url_ok = "https://ocular.ch/hidden"; //Zielseite, wenn E-Mail erfolgreich versendet wurde
 $url_fehler = "http://www.ocular.ch"; //Zielseite, wenn E-Mail nicht gesendet werden konnte
+
+if (isset($_POST['Submit'])) {
+echo "Deine Nachricht wurder erfolgreich versendet.";
+ } else {
+
+
+}
  
  
 //Diese Felder werden nicht in der Mail stehen
@@ -60,9 +67,9 @@ $mail_senden = mail($empfaenger,$betreff,$msg,$header);
  
 //Weiterleitung, hier konnte jetzt per echo auch Ausgaben stehen
 if($mail_senden){
-  header("Location: ".$url_ok); //Mail wurde gesendet
+  echo "Deine Nachricht wurde erfolgreich versendet."; //Mail wurde gesendet
   exit();
 } else{
-  header("Location: ".$url_fehler); //Fehler beim Senden
+  echo "Da ist wohl ein Feler aufgetreten, versuche es später noch einmal."; //Fehler beim Senden
   exit();
 }

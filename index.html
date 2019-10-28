@@ -7,6 +7,7 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<link rel="SHORTCUT ICON" href="img/03-Logo/favicon-ocular.png" type="image/x-icon" />
 	<link rel="ICON" href="img/03-Logo/favicon-ocular.png" type="image/ico" />	
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 <meta charset="utf-8">
 	
 <title>ocular.ch</title>
@@ -38,6 +39,11 @@
 			<img src="img/04-Projekt-Thumbnail/_MG_8410.JPG" class="thumbnail" alt="">
 			<div class="imgtext">emanuel wuethrich</div>
 			</div>
+		
+		<div class="mehr-button">
+			<a href="projekte.html">mehr projekte</a>
+		</div>
+		
 	</div>
 	</article>
 	
@@ -47,7 +53,7 @@
 		<h1>über uns</h1>
 		<hr>
 			</div>
-		<p>Wir sind drei junge, motivierte Jungs. Wir haben uns zusammen getan um für dich oder dein Unternehmen passende Inhalte für dein Social Media Auftritt zu produzieren. <br><br>Wir können dein Event Fotografisch festhalten oder dein Unternehmen in einem Imagefilm professionell auftreten lassen. Falls du als Privatperson ein Videoportrait für deine Bewerbung oder einen sonstigen Zweck benötigst, helfen wir mit unseren Kenntnissen gerne aus. Lass dich von unserer Arbeit überzeugen und kontaktiere uns über das untenstehende Kontaktformular oder schreib uns eine Mail an <a href="info@ocular.ch">info@ocular.ch</a>. Wir freue uns auf denen Auftrag!</p>
+		<p>Wir sind drei junge, motivierte Jungs. Wir haben uns zusammen getan um für dich oder dein Unternehmen passende Inhalte für dein Social Media Auftritt zu produzieren. <br><br>Wir können dein Event Fotografisch festhalten oder dein Unternehmen in einem Imagefilm professionell auftreten lassen. Falls du als Privatperson ein Videoportrait für deine Bewerbung oder einen sonstigen Zweck benötigst, helfen wir mit unseren Kenntnissen gerne aus. Lass dich von unserer Arbeit überzeugen und kontaktiere uns über das untenstehende Kontaktformular oder schreib uns eine Mail an <a href="info@ocular.ch">info@ocular.ch</a>. Wir freuen uns auf deinen Auftrag!</p>
 		
 		<div class="team">
 			<h1>team</h1>
@@ -77,7 +83,7 @@
 		<h1>kontakt</h1>
 		<hr>
 			</div>
-		<form method="post" action="send_email.php">
+		<form method="post" action="send_email.php" ;>
 			
 		<label for="Vorname"><p>Vorname*</p></label>
 		<input type="text" min="1" id="Vorname" name="Vorname" required><br><br>
@@ -88,7 +94,7 @@
 		<label for="Email"><p>E-Mail*</p></label>
 		<input type="email" min="1" id="Email" name="Email" required><br><br>
 		
-		<label for="Betreff"><p>Tel. (opt.)</p></label>
+		<label for="Betreff"><p>Telefon</p></label>
 		<input type="number" id="Telefon" name="Telefon"><br><br>
 			
 		<label for="Betreff"><p>Betreff</p></label>
@@ -121,7 +127,29 @@
 			  window.location.hash = target;
 			 });
 			});
-	</script>
+		</script>
+	
+	
+		<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+	//cookie consent
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#212121",
+      "text": "#f7f7f7"
+    },
+    "button": {
+      "background": "#f7f7f7",
+      "text": "#212121"
+    }
+  },
+  "content": {
+    "message": "Diese Website verwendet cookies um Ihre Erfahrung auf unserer Seite zu verbessern."
+  }
+});
+</script>
+	
 	
 </body>
 </html>
