@@ -13,6 +13,22 @@
 </head>
 
 <body>
+	
+	<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="index.html">home</a>
+    <a href="index.html#projekte">projekte</a>
+    <a href="index.html#about">über uns</a>
+    <a href="index.html#kontakt">kontakt</a>
+  </div>
+</div>
+	<div class="navbar">
+	<span class="hamburger" onclick="openNav()">&#9776;</span>
+		<a href="index.html"><img src="img/03-Logo/02-SVG/OCULAR-SYMBOL-WHITE.svg" alt=""></a>
+	  </div>
+	
+	<div class="back-arrow"><a href="index.html">&#8249;</a></div>
 	<div class="projekte-pr" id="projekte" >
 		<div class="titel">
 			<h1>projekte</h1>
@@ -21,9 +37,39 @@
 		
 		<div class="projekt-container">
 			<img src="img/04-Projekt-Thumbnail/_MG_8410.JPG" class="thumbnail" alt="">
+			<div class="imgtext">downhill video</div>
+			</div>
+		
+		<div class="projekt-container">
+			<img src="img/04-Projekt-Thumbnail/_MG_6597-Bearbeitet.png" class="thumbnail" alt="">
 			<div class="imgtext">emanuel wuethrich</div>
 			</div>
 		</div>
 	
+	<div class="projekt-container">
+			<img src="img/04-Projekt-Thumbnail/_MG_8410.JPG" class="thumbnail" alt="">
+			<div class="imgtext">emanuel wuethrich</div>
+			</div>
+	
+	<div class="projekt-container">
+			<img src="img/04-Projekt-Thumbnail/_MG_8410.JPG" class="thumbnail" alt="">
+			<div class="imgtext">emanuel wuethrich</div>
+			</div>
+	
+	<div class="footer">
+		<a href="mailto:info@ocular.ch">info@ocular.ch</a>
+		<p>	&copy; 2019 ocular</p>
+	</div>
+	  
+	  
+	<script>
+	function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+	  </script>
 </body>
 </html>

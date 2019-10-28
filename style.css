@@ -19,7 +19,7 @@ html{
 
 h1{
 	font-family: acumin-pro, sans-serif;
-	font-weight: 600;
+	font-weight: 300;
 	font-style: normal;
 	font-size: 24px;
 	letter-spacing: 1px;
@@ -41,6 +41,7 @@ p{
 	font-weight: 200;
 	font-style: normal;
 	font-size: 16px;
+	letter-spacing: 1px;
 	color: #f7f7f7;
 	padding-bottom: 0.5em;
 	margin: 0;
@@ -50,6 +51,7 @@ a{
 	font-family: acumin-pro, sans-serif;
 	font-weight: 200;
 	font-style: normal;
+	letter-spacing: 0.5px;
 	color: #f7f7f7;
 	text-decoration: none;
 }
@@ -114,28 +116,31 @@ article{
 	width:100%;
 }
 .projekt-container{
-	margin-top: 2em;
+	margin-top: 3em;
 	position: relative;
 }
-.projekt-container:hover .thumbnail{
+.projekt-container .thumbnail{
 	filter: brightness(80%);
+}
+.projekt-container:hover .thumbnail{
+	filter: brightness(100%);
 }
 
 .imgtext{
 	position: absolute;
-	padding: 0.5em;
-	top: 100%;
+	padding: 1em;
+	top: 50%;
  	left: 50%;
-	width: 70%;
+	width: 100%;
   	transform: translate(-50%, -50%);
 	font-family: acumin-pro, sans-serif;
 	font-weight: 400;
 	font-style: normal;
+	font-size: 25px;
 	text-align: center;
-	color: #212121;
-	background-color: #f7f7f7;
+	color: #f7f7f7;
 	border: 0;
-	z-index: 2;
+	z-index: 1;
 }
 
 .mehr-button{
@@ -147,7 +152,6 @@ article{
 	color: #212121;
 	font-size: 14px;
 	padding: 2vw;
-	border-radius: 10px;
 }
 
 
@@ -221,6 +225,79 @@ textarea{
 .footer a, .footer p{
 	color: #808080;
 	font-size: 14px;
+}
+
+/*PROJEKT PAGE*/
+.projekte-pr{
+	margin-top: 2em;
+}
+.back-arrow a{
+	padding-top: 20em; 
+	font-size: 5em;
+}
+
+/*NAV BAR (BEI UNTERSEITEN)*/
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  z-index: 4;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #f7f7f7;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 0em;
+  right: 0.5em;
+  font-size: 50px;
+}
+.hamburger{
+	font-size:30px;
+	cursor:pointer;
+	float: right;
+	padding-top: 0.5em;
+	padding-right: 0.5em;
+	color: #f7f7f7;
+	margin-right: 0.5em;
+}
+.navbar{
+	background-color: #212121;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 3;
+}
+.navbar img{
+	width:5em;
+	top: 0.5em;
+	padding-left: 2em;
+	
 }
 
 @media (min-width:1920px){
