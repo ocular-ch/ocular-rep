@@ -178,6 +178,9 @@ article{
 	display: inline-block;
 	position:static;
 }
+.teammember1 p, .teammember2 p, .teammember3 p{
+	text-align: center;
+}
 
 .teammember1{
 	float: left;
@@ -226,6 +229,7 @@ textarea{
 .footer a, .footer p{
 	color: #808080;
 	font-size: 14px;
+	text-align: center;
 }
 
 /*PROJEKT PAGE*/
