@@ -104,7 +104,9 @@ article{
   	display: flex;
   	align-items: center;
  	justify-content: center;
-  	height: 15vw;;
+	padding-top: 0em;
+  	height: 15vw;
+	opacity: 0;
 }
 
 /*PROJEKTE*/
@@ -125,6 +127,7 @@ article{
 }
 .projekt-container:hover .thumbnail{
 	filter: brightness(100%);
+	transition: 0.5s;
 }
 
 .imgtext{
