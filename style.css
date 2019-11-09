@@ -85,27 +85,22 @@ article{
 }
 
 .arrow-down {
-  box-sizing: border-box;
-  height: 10vw;
-  width: 10vw;
-  border-style: solid;
-  border-color: white;
-  border-width: 0px 1px 1px 0px;
-  transform: rotate(45deg);
-  transition: border-width 150ms ease-in-out;
-}
-
-.arrow-down:hover {
-  border-bottom-width: 4px;
-  border-right-width: 4px;
+	 box-sizing: border-box;
+	 height: 10vw;
+	 width: 10vw;
+	 border-style: solid;
+	 border-color: #f7f7f7;   
+	 border-width: 0px 1px 1px 0px;
+	 transform: rotate(45deg);
+	 transition: border-width 150ms ease-in-out;
 }
 
 .arrow {
-  	display: flex;
-  	align-items: center;
- 	justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	padding-top: 0em;
-  	height: 15vw;
+	height: 15vw;
 	opacity: 0;
 }
 
@@ -155,7 +150,7 @@ article{
 	background-color: #f7f7f7;
 	color: #212121;
 	font-size: 14px;
-	padding: 2vw;
+	padding: 1.2vw;
 }
 
 
@@ -326,8 +321,80 @@ textarea{
     height: 80%;
 }
 
-@media (min-width:1920px){
+@media (min-width:1080px){
 	input[type=submit]:hover{
 	background-color: #808080;
 	color: #f7f7f7;
-}}
+}
+	body{
+		margin: 5%;
+	}
+	h1{
+		font-size: 30px;
+	}
+	article{
+		text-align: center;
+	}
+	p{
+		padding: 1.2%;
+	}
+	.titel{
+		padding-left: 1.2%;
+		margin-bottom: 2vw;
+	}	
+	/*STARTPAGE*/
+	.startpage img{
+		width: 30%;
+		margin-top: 0;
+		padding: 0;
+	}
+	
+	.arrow-down {
+	  	height: 4vw;
+	  	width: 4vw;
+	  	border-width: 0px 1px 1px 0px;
+	  	transform: rotate(45deg);
+	  	transition: border-width 150ms ease-in-out;
+}
+	.arrow-down:hover {
+	  	border-bottom-width: 4px;
+	  	border-right-width: 4px;
+}
+
+	.arrow {
+		height: 0vw;
+}
+	
+	/*PROJEKTE*/
+	
+	.projekte{
+		margin-top: 30%;
+		width: 100%;
+		text-align: left;
+}
+	.projekt-container img{
+		width:100%;
+}
+	.projekt-container{
+		width: 47.4%;
+		display: inline-block;
+		padding: 1.2%;
+		text-align: center;
+		margin-top: 0;
+	}
+	.mehr-button a{
+		padding: 1.2vw;
+	}
+	
+	/*ÜBER UNS*/
+	
+	.team{
+		margin-top: 2em;
+		padding: 1em;
+	}
+	
+	.team h1{
+		font-size: 25px;
+	}
+
+}
