@@ -28,11 +28,17 @@
 	
 	</div>
 	
-	<article >
+	
 	<div class="projekte" id="projekte" >
 		<div class="titel">
 			<h1>projekte</h1>
 			<hr>
+			</div>
+		
+	
+		<div class="projekt-container"><a href="projekte/fotoshoot-ocular.html">
+			<img src="img/04-Projekt-Thumbnail/Fotoshoot-Ocular.png" class="thumbnail" alt="">
+			<div class="imgtext">fotoshoot ocular</div></a>
 			</div>
 		
 		<div class="projekt-container"><a href="projekte/emanuel-wuethrich.html">
@@ -40,17 +46,11 @@
 			<div class="imgtext">emanuel wuethrich</div></a>
 			</div>
 		
-		<div class="projekt-container"><a href="projekte/fotoshoot-ocular.html">
-			<img src="img/04-Projekt-Thumbnail/Fotoshoot-Ocular.png" class="thumbnail" alt="">
-			<div class="imgtext">fotoshoot ocular</div></a>
-			</div>
-		
 		<div class="mehr-button">
-			<a href="projekte/projekte.html">mehr projekte</a>
+			<a href="projekte/projekte.html">mehr</a>
 		</div>
 		
 	</div>
-	</article>
 	
 	<article id="about">
 	<div class="ueber-uns" >
@@ -89,22 +89,26 @@
 		<hr>
 			</div>
 		<form method="post" action="send_email.php" ;>
-			
+		<div class="input1">	
 		<label for="Vorname"><p>Vorname*</p></label>
 		<input type="text" min="1" id="Vorname" name="Vorname" required><br><br>
-		
+		</div>
+			
+		<div class="input2">	
 		<label for="Nachname"><p>Nachname*</p></label>
 		<input type="text" min="1" id="Nachname" name="Nachname" required><br><br>
-
+		</div>
+		
+		<div class="input3">
 		<label for="Email"><p>E-Mail*</p></label>
 		<input type="email" min="1" id="Email" name="Email" required><br><br>
+		</div>
 		
-		<label for="Betreff"><p>Telefon</p></label>
-		<input type="number" id="Telefon" name="Telefon"><br><br>
-			
+		<div class="input4">
 		<label for="Betreff"><p>Betreff</p></label>
 		<input type="text" min="1" id="Betreff" name="Betreff"><br><br>
-
+		</div>
+			
 		<label for="Nachricht"><p>Nachricht*</p></label>
 		<textarea id="Nachricht" min="1" name="Nachricht" rows="10" cols="50" required></textarea> <br><br>
 
