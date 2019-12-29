@@ -11,6 +11,7 @@ body{
 	overflow-x: hidden;
 	-webkit-overflow-scroll: touch;
 	background-color: #212121;
+	max-width: 1400px;
 	}
 
 html{
@@ -248,8 +249,6 @@ textarea{
 .arrow-pr {
 	display: flex;
 	height: 10vw;
-	margin: 1.2%;
-	margin-top: 5%;
 }
 
 .back-arrow:hover {
