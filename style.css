@@ -29,10 +29,17 @@ h1{
     text-transform: uppercase;
     text-align: center;
 }
+h2{
+    text-transform: uppercase;
+}
 h3{
     font-weight: 500;
     font-size: 0.9rem;
     padding-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+p{
+    line-height: 200%;
 }
 a{
     color: #141414;
@@ -41,7 +48,7 @@ a:hover{
     color: #808080;
 }
 .titel{
-    margin-bottom: 3em;
+    margin-bottom: 8rem;
     font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
@@ -136,16 +143,25 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5em;
+    margin-top: 10em;
 }
 .start-button a{
     text-decoration: none;
     text-transform: uppercase;
+    text-align: center;
     font-weight: 200;
     border-radius: 25px;
     border: 1px solid #f7f7f7;
+    background-color: transparent;
     padding: 0.5rem;
     color: #f7f7f7;
+    width: 10rem;
+    transition: 0.3s;
+}
+.start-button a:hover{
+    background-color: #f7f7f7;
+    color: #141414; 
+    transition: 0.25s;
 }
 /*ÜBER UNS*/
 #about{
@@ -154,20 +170,45 @@ nav{
 .über-uns{
     columns: 3;
 }
-.team{
-    margin-top: 7rem;
+
+/*Team*/
+.team-container{
+    display: flex;
 }
-.team h1{
+.team-article{
+    flex: 2;
+    padding: 10% 10% 5% 10%;
+
+    
+}
+.team-article p{
+    line-height: 160%;
+}
+.team-bild{
+    flex: 2;
+    background-image: url(./img/06-Galerie/cedric-jonas-ocular-lostplace.JPG);
+    background-size: cover;
+    background-position: center;
+    margin-top: 0;
+    padding: 10%;
+}
+.team{
+    display: flex;
+    padding: 0;
+}
+.team h2{
     font-size: 1.2em;
     letter-spacing: 0.2rem;
     margin-bottom: 3rem;
+    text-align: center;
 }
 .team-wrapper{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-top: 10%;
 }
 .teammember1, .teammember2, .teammember3{
-    width: 10%;
+    width: 15%;
     flex-direction: column;
     justify-content: center;
     display: flex;
@@ -188,48 +229,102 @@ nav{
 	width:100%;
 }
 
-/*PROJEKTE*/
-.projekte{
-    display: flex;
-    justify-content: space-around;
+/*PROJEKTE HOMEPAGE*/
+#projekte{
+    justify-content: center;
+    align-items: center ;
 }
 .projekt-container{
-    width: 40%;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
+    margin-bottom: 15vh;
 }
 .projekt-container img{
-    width: 100%;
+    width: 35%;
+    height: inherit;
+    
 }
-.projekt-container .thumbnail{
-	filter: brightness(70%);
+.projekt-tease{
+    width: 50%;
 }
-.projekt-container:hover .thumbnail{
-	filter: brightness(100%);
-	transition: 0.5s;
+.projekt-tease code{
+    font-family: acumin-pro, sans-serif;
+    font-weight: 200;
+    font-style: normal;
 }
-.mehr-wrapper{
+.projekt-tease h2{
+    padding-bottom: 1rem;
+}
+.mehr-lesen-button{
     display: flex;
-    justify-content: space-around;
-    align-content: center;
-    padding-top: 5rem;
+    justify-content: ;
+    align-items: center;
+    margin-top: 1rem;
+}
+.mehr-lesen-button a{
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 200;
+    font-size:0.7rem ;
+    border-radius: 25px;
+    border: 1px solid #141414;
+    background-color: transparent;
+    padding: 0.5rem;
+    color: #141414;
+    width: 10em;
+    transition: 0.3s;
+}
+.mehr-lesen-button a:hover{
+    background-color: #141414;
+    color: #f7f7f7;
 }
 .mehr-button{
-    width: 10%;
+    text-align: center;
+    margin-top: 8rem;
 }
 .mehr-button a{
-	background-color: #ededed;
-	color: #141414;
-    font-size: 0.8rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
     text-decoration: none;
-	padding: 0.5em 2em 0.5em 2em;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 200;
+    font-size: 0.9rem;
+    border-radius: 25px;
+    border: 1px solid #141414;
+    background-color: transparent;
+    padding: 0.3rem 3rem;
+    color: #141414;
+    width: 10rem;
+    transition: 0.3s;
 }
-.mehr-button a:hover{
-	background-color: #808080;
-	color:#ededed;
+}
+
+/*GALERIE HOMEPAGE*/
+#galerie{
+    display: flex;
+}
+.prev-bilder{
+    flex: 1;
+}
+.img-small-prev{
+    width: 45%;
+    padding: 2%;
+}
+.img-big-prev{
+    width: 91%;
+    padding: 2%;
+}
+.galerie-text{
+    flex: 1;
+}
+.galerie-text h2{
+    text-align: center;
+    padding-bottom: 3rem;
+}
+.galerie-text .mehr-button{
+    color: #f7f7f7;
 }
 
 /*FOOTER*/
